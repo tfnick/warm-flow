@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.dromara.warm</groupId>
+        <artifactId>warn-flow-sqltoy</artifactId>
+        <version>1.8.2</version>
+    </parent>
+
+    <name>warn-flow-sqltoy-core</name>
+    <artifactId>warn-flow-sqltoy-core</artifactId>
+    <url>https://github.com/dromara/warm-flow</url>
+
+    <properties>
+
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.dromara.warm</groupId>
+            <artifactId>warm-flow-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sagframe</groupId>
+            <artifactId>sagacity-sqltoy</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sagframe</groupId>
+            <artifactId>sqltoy-quickvo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sagframe</groupId>
+            <artifactId>sqltoy-plus-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+
+    </dependencies>
+</project>

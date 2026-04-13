@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.dromara.warm</groupId>
+        <artifactId>warm-flow-orm</artifactId>
+        <version>1.8.2</version>
+    </parent>
+
+    <artifactId>warn-flow-sqltoy</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>warn-flow-sqltoy-core</module>
+        <module>warn-flow-sqltoy-sb3-starter</module>
+    </modules>
+
+</project>

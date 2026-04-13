@@ -16,7 +16,6 @@
 package org.dromara.warm.flow.orm.dao;
 
 import org.dromara.warm.flow.core.orm.dao.FlowFormDao;
-import org.dromara.warm.flow.core.utils.page.Page;
 import org.dromara.warm.flow.orm.entity.FlowForm;
 import org.dromara.warm.flow.orm.utils.TenantDeleteUtil;
 
@@ -34,11 +33,6 @@ public class FlowFormDaoImpl extends WarmDaoImpl<FlowForm> implements FlowFormDa
     @Override
     public FlowForm newEntity() {
         return new FlowForm();
-    }
-
-    @Override
-    public Page<FlowForm> selectPage(FlowForm entity, Page<FlowForm> page) {
-        return null;
     }
 
     @Override

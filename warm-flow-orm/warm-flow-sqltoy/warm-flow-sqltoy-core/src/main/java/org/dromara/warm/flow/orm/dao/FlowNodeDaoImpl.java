@@ -18,7 +18,6 @@ package org.dromara.warm.flow.orm.dao;
 import org.dromara.warm.flow.core.FlowEngine;
 import org.dromara.warm.flow.core.orm.dao.FlowNodeDao;
 import org.dromara.warm.flow.core.utils.StringUtils;
-import org.dromara.warm.flow.core.utils.page.Page;
 import org.dromara.warm.flow.orm.entity.FlowNode;
 import org.dromara.warm.flow.orm.utils.TenantDeleteUtil;
 
@@ -38,11 +37,6 @@ public class FlowNodeDaoImpl extends WarmDaoImpl<FlowNode> implements FlowNodeDa
     @Override
     public FlowNode newEntity() {
         return new FlowNode();
-    }
-
-    @Override
-    public Page<FlowNode> selectPage(FlowNode entity, Page<FlowNode> page) {
-        return null;
     }
 
     @Override

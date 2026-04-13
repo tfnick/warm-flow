@@ -18,7 +18,6 @@ package org.dromara.warm.flow.orm.dao;
 import org.dromara.warm.flow.core.FlowEngine;
 import org.dromara.warm.flow.core.orm.dao.FlowHisTaskDao;
 import org.dromara.warm.flow.core.utils.StringUtils;
-import org.dromara.warm.flow.core.utils.page.Page;
 import org.dromara.warm.flow.orm.entity.FlowHisTask;
 import org.dromara.warm.flow.orm.utils.TenantDeleteUtil;
 
@@ -37,11 +36,6 @@ public class FlowHisTaskDaoImpl extends WarmDaoImpl<FlowHisTask> implements Flow
     @Override
     public FlowHisTask newEntity() {
         return new FlowHisTask();
-    }
-
-    @Override
-    public Page<FlowHisTask> selectPage(FlowHisTask entity, Page<FlowHisTask> page) {
-        return null;
     }
 
     @Override

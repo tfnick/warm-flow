@@ -221,8 +221,12 @@ public abstract class WarmDaoImpl<T extends RootEntity> implements WarmDao<T> {
         if (StringUtils.isNotEmpty(entity.getDelFlag())) {
             return executeLogicDelete(buildWhereClause(entity), getWhereParams(entity), entity.getDelFlag());
         }
-        String sql = "delete from " + getTableName() + buildWhereClause(entity);
-        return getSqlToyHelperDao().executeSql(sql, null, getWhereParams(entity).toArray()).intValue();
+        // 物理删除时排除 delFlag，与 mybatis 保持一致
+        Set<String> deleteExcludedFields = new HashSet<>(EXCLUDED_FIELDS);
+        deleteExcludedFields.add("delFlag");
+        String whereClause = buildWhereClause(entity, deleteExcludedFields);
+        String sql = "delete from " + getTableName() + whereClause;
+        return getSqlToyHelperDao().executeSql(sql, null, getWhereParams(entity, deleteExcludedFields).toArray()).intValue();
     }
 
     @Override
@@ -346,12 +350,16 @@ public abstract class WarmDaoImpl<T extends RootEntity> implements WarmDao<T> {
     // ========== 私有辅助方法 ==========
 
     private String buildWhereClause(T entity) {
+        return buildWhereClause(entity, EXCLUDED_FIELDS);
+    }
+
+    private String buildWhereClause(T entity, Set<String> excludedFields) {
         StringBuilder where = new StringBuilder();
         Field[] fields = entity.getClass().getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
             String fieldName = field.getName();
-            if (EXCLUDED_FIELDS.contains(fieldName)) {
+            if (excludedFields.contains(fieldName)) {
                 continue;
             }
             try {
@@ -367,12 +375,16 @@ public abstract class WarmDaoImpl<T extends RootEntity> implements WarmDao<T> {
     }
 
     private List<Object> getWhereParams(T entity) {
+        return getWhereParams(entity, EXCLUDED_FIELDS);
+    }
+
+    private List<Object> getWhereParams(T entity, Set<String> excludedFields) {
         List<Object> params = new ArrayList<>();
         Field[] fields = entity.getClass().getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
             String fieldName = field.getName();
-            if (EXCLUDED_FIELDS.contains(fieldName)) {
+            if (excludedFields.contains(fieldName)) {
                 continue;
             }
             try {

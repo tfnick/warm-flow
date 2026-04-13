@@ -17,7 +17,6 @@ package org.dromara.warm.flow.orm.dao;
 
 import org.dromara.warm.flow.core.orm.dao.FlowInstanceDao;
 import org.dromara.warm.flow.core.utils.StringUtils;
-import org.dromara.warm.flow.core.utils.page.Page;
 import org.dromara.warm.flow.orm.entity.FlowInstance;
 import org.dromara.warm.flow.orm.utils.TenantDeleteUtil;
 
@@ -35,11 +34,6 @@ public class FlowInstanceDaoImpl extends WarmDaoImpl<FlowInstance> implements Fl
     @Override
     public FlowInstance newEntity() {
         return new FlowInstance();
-    }
-
-    @Override
-    public Page<FlowInstance> selectPage(FlowInstance entity, Page<FlowInstance> page) {
-        return null;
     }
 
     @Override

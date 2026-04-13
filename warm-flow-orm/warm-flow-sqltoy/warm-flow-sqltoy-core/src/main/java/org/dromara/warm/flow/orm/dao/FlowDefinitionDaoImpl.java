@@ -16,7 +16,6 @@
 package org.dromara.warm.flow.orm.dao;
 
 import org.dromara.warm.flow.core.orm.dao.FlowDefinitionDao;
-import org.dromara.warm.flow.core.utils.page.Page;
 import org.dromara.warm.flow.orm.entity.FlowDefinition;
 import org.dromara.warm.flow.orm.utils.TenantDeleteUtil;
 
@@ -34,11 +33,6 @@ public class FlowDefinitionDaoImpl extends WarmDaoImpl<FlowDefinition> implement
     @Override
     public FlowDefinition newEntity() {
         return new FlowDefinition();
-    }
-
-    @Override
-    public Page<FlowDefinition> selectPage(FlowDefinition entity, Page<FlowDefinition> page) {
-        return null;
     }
 
     @Override

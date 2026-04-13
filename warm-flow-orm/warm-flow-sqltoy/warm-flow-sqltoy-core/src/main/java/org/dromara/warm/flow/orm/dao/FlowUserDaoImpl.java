@@ -19,7 +19,6 @@ import org.dromara.warm.flow.core.FlowEngine;
 import org.dromara.warm.flow.core.orm.dao.FlowUserDao;
 import org.dromara.warm.flow.core.utils.CollUtil;
 import org.dromara.warm.flow.core.utils.StringUtils;
-import org.dromara.warm.flow.core.utils.page.Page;
 import org.dromara.warm.flow.orm.entity.FlowUser;
 import org.dromara.warm.flow.orm.utils.TenantDeleteUtil;
 
@@ -37,11 +36,6 @@ public class FlowUserDaoImpl extends WarmDaoImpl<FlowUser> implements FlowUserDa
     @Override
     public FlowUser newEntity() {
         return new FlowUser();
-    }
-
-    @Override
-    public Page<FlowUser> selectPage(FlowUser entity, Page<FlowUser> page) {
-        return null;
     }
 
     @Override

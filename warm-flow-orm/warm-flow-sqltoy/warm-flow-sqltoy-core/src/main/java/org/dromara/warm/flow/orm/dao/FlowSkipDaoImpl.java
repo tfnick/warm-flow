@@ -18,7 +18,6 @@ package org.dromara.warm.flow.orm.dao;
 import org.dromara.warm.flow.core.FlowEngine;
 import org.dromara.warm.flow.core.orm.dao.FlowSkipDao;
 import org.dromara.warm.flow.core.utils.StringUtils;
-import org.dromara.warm.flow.core.utils.page.Page;
 import org.dromara.warm.flow.orm.entity.FlowSkip;
 import org.dromara.warm.flow.orm.utils.TenantDeleteUtil;
 
@@ -36,11 +35,6 @@ public class FlowSkipDaoImpl extends WarmDaoImpl<FlowSkip> implements FlowSkipDa
     @Override
     public FlowSkip newEntity() {
         return new FlowSkip();
-    }
-
-    @Override
-    public Page<FlowSkip> selectPage(FlowSkip entity, Page<FlowSkip> page) {
-        return null;
     }
 
     @Override

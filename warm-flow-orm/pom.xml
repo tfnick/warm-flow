@@ -17,7 +17,7 @@
     <modules>
         <module>warm-flow-mybatis</module>
         <module>warm-flow-mybatis-plus</module>
-        <module>warn-flow-sqltoy</module>
+        <module>warm-flow-sqltoy</module>
     </modules>
 
 </project>

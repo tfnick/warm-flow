@@ -9,11 +9,11 @@
         <version>1.8.2</version>
     </parent>
 
-    <artifactId>warn-flow-sqltoy</artifactId>
+    <artifactId>warm-flow-sqltoy</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>warn-flow-sqltoy-core</module>
-        <module>warn-flow-sqltoy-sb3-starter</module>
+        <module>warm-flow-sqltoy-core</module>
+        <module>warm-flow-sqltoy-sb3-starter</module>
     </modules>
 
 </project>

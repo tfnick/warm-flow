@@ -302,13 +302,13 @@
 
             <dependency>
                 <groupId>org.dromara.warm</groupId>
-                <artifactId>warn-flow-sqltoy-core</artifactId>
+                <artifactId>warm-flow-sqltoy-core</artifactId>
                 <version>${warm-flow}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.dromara.warm</groupId>
-                <artifactId>warn-flow-sqltoy-sb3-starter</artifactId>
+                <artifactId>warm-flow-sqltoy-sb3-starter</artifactId>
                 <version>${warm-flow}</version>
             </dependency>
 

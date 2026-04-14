@@ -6,7 +6,7 @@
 
     <groupId>io.github.tfnick.warmflow</groupId>
     <artifactId>warm-flow</artifactId>
-    <version>1.8.4-RC1</version>
+    <version>1.8.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>warm-flow</name>
@@ -30,28 +30,8 @@
     <developers>
         <developer>
             <id>Warm-Flow</id>
-            <name>stupidkid</name>
-            <email>290631660@qq.com</email>
-        </developer>
-        <developer>
-            <id>Warm-Flow</id>
-            <name>xiarigang</name>
-            <email>272227118@qq.com</email>
-        </developer>
-        <developer>
-            <id>Warm-Flow</id>
-            <name>vanlin</name>
-            <email>vanlin@139.com</email>
-        </developer>
-        <developer>
-            <id>Warm-Flow</id>
-            <name>liangli</name>
-            <email>liangli_zsw@163.com</email>
-        </developer>
-        <developer>
-            <id>Warm-Flow</id>
-            <name>Zhen</name>
-            <email>w205782390@163.com</email>
+            <name>tfnick</name>
+            <email>tfnick@qq.com</email>
         </developer>
     </developers>
 

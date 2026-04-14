@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.dromara.warm</groupId>
+        <groupId>io.github.tfnick.warmflow</groupId>
         <artifactId>warm-flow-mybatis-plus</artifactId>
-        <version>1.8.2</version>
+        <version>1.8.4-RC1</version>
     </parent>
 
     <name>warm-flow-mybatis-plus-sb-starter</name>
     <artifactId>warm-flow-mybatis-plus-sb-starter</artifactId>
     <description>warm-flow orm为mybatis-plus的springboot starter</description>
-    <url>https://github.com/dromara/warm-flow</url>
+    <url>https://github.com/tfnick/warm-flow</url>
 
     <dependencies>
         <dependency>
-            <groupId>org.dromara.warm</groupId>
+            <groupId>io.github.tfnick.warmflow</groupId>
             <artifactId>warm-flow-mybatis-plus-core</artifactId>
         </dependency>
 
@@ -26,12 +26,17 @@
         </dependency>
 
         <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-jsqlparser-4.9</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.dromara.warm</groupId>
+            <groupId>io.github.tfnick.warmflow</groupId>
             <artifactId>warm-flow-plugin-modes-sb</artifactId>
         </dependency>
 

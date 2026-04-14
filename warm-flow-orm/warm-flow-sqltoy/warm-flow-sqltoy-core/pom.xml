@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.github.tfnick.warmflow</groupId>
+        <artifactId>warm-flow-sqltoy</artifactId>
+        <version>1.8.4-RC1</version>
+    </parent>
+
+    <name>warm-flow-sqltoy-core</name>
+    <artifactId>warm-flow-sqltoy-core</artifactId>
+    <url>https://github.com/tfnick/warm-flow</url>
+
+    <properties>
+
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.tfnick.warmflow</groupId>
+            <artifactId>warm-flow-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sagframe</groupId>
+            <artifactId>sagacity-sqltoy</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sagframe</groupId>
+            <artifactId>sqltoy-quickvo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sagframe</groupId>
+            <artifactId>sqltoy-plus-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+</project>

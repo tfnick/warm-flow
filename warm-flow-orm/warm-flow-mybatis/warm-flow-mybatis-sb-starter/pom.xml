@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.tfnick.warmflow</groupId>
         <artifactId>warm-flow-mybatis</artifactId>
-        <version>1.8.4-SNAPSHOT</version>
+        <version>1.8.4-RC1</version>
     </parent>
 
     <name>warm-flow-mybatis-sb-starter</name>

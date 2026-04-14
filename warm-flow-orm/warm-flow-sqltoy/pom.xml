@@ -9,8 +9,10 @@
         <version>1.8.4-RC1</version>
     </parent>
 
+    <name>warm-flow-mybatis</name>
     <artifactId>warm-flow-sqltoy</artifactId>
     <packaging>pom</packaging>
+    <url>https://github.com/tfnick/warm-flow</url>
     <modules>
         <module>warm-flow-sqltoy-core</module>
         <module>warm-flow-sqltoy-sb3-starter</module>
